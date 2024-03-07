@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.getmehelp_project">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Car serv"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".Register"
+            android:exported="true"></activity>
+        <activity android:name=".credit_point_payment" />
+        <activity android:name=".change_password" />
+        <activity android:name=".send_rate" />
+
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <uses-library android:name="org.apache.http.legacy" />
+
+        <activity
+            android:name=".online_payment"
+            android:exported="false" />
+        <activity
+            android:name=".IP_page"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Make_payment"
+            android:exported="false" />
+        <!--<activity-->
+            <!--android:name=".custom_view_bank"-->
+            <!--android:exported="false" />-->
+        <activity
+            android:name=".view_bank"
+            android:exported="false" />
+        <activity
+            android:name=".add_bank"
+            android:exported="false" />
+        <activity
+            android:name=".Chat"
+            android:exported="false" />
+        <activity
+            android:name=".view_reply"
+            android:exported="false" />
+        <!--<activity-->
+            <!--android:name=".custom_view_reply"-->
+            <!--android:exported="false" />-->
+        <activity
+            android:name=".view_complaint"
+            android:exported="false" />
+        <activity
+            android:name=".send_complaint"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".custom_view_bill" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".view_bill"
+            android:exported="false" />
+        <activity
+            android:name=".view_request"
+            android:exported="false" />
+        <activity
+            android:name=".view_service"
+            android:exported="false" />
+        <activity
+            android:name=".view_review_rating"
+            android:exported="false" />
+        <activity
+            android:name=".view_approved_worker"
+            android:exported="false" />
+        <activity
+            android:name=".Category_view"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
